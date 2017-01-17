@@ -9,7 +9,13 @@
 # 通用工程目录结构(见demo)
 
 
+#后记
+以上就是我的MVP模式的一点理解，在MVVM模式还没有成熟的现在，我觉得没有比MVP模式更好的替代品了。当然今天写的只是MVP的基础使用，
+介绍的实例项目也非常简单，看不出MVP的优势，后面还会针对MVP模式写一些日志，就目前能想到的至少包括
 
+Android常规的开发模式经常被称为MV模式（Model-View），引入数据绑定后的MVVM模式（Model-View-ViewModel），与MVP模式的区别
+目前我们写ListView的Adapter都喜欢把它写成一个内部类，如果有两个Activity里要用同一个Adapter就比较难了，通过MVP模式，能轻松地复用Adapter（你说已经不用ListView了，这不是重点不是么( ˃◡˂ )）
+MVP模式需要多写许多新的接口，这也是其缺点所在，经过一段时间的实战，我自己已有一种优化的MVP模式，我会试着总结一下，把她拿出来说说
 
 
 
@@ -20,3 +26,7 @@
      *4：MVP 相对于 MVC 而言，大大降低了耦合度（Activity 不再进行复杂的操作），层级更明显，更利于单元测试。
      *5：MVP 的缺点：类文件会爆炸（极具增加），有一定的学习成本。
 #参考资料: http://www.cnblogs.com/android-zcq/p/5126925.html
+			https://segmentfault.com/a/1190000003927200
+			http://kaedea.com/2015/10/11/android-mvp-pattern/
+			
+			
